@@ -127,8 +127,8 @@ The **Multi-Agent Crypto/Financial Assistant** is an **AI-powered system** desig
 **🔥 Core LLM/RAG Pipeline**
 - ✅ **Document Processing**: PDF parsing với Docling, text extraction, image summarization
 - ✅ **Semantic Chunking**: GPT-4o-mini powered intelligent segmentation (256-512 tokens)
-- ✅ **Hybrid Vector Search**: BM25 sparse + Dense embeddings trong Qdrant Cloud
-- ✅ **Intelligent Retrieval**: Query expansion, cross-encoder reranking với confidence scoring
+- ✅ **Hybrid Vector Search**: BM25 sparse + Dense embeddings in Qdrant Cloud
+- ✅ **Intelligent Retrieval**: Query expansion, cross-encoder reranking with confidence scoring
 - ✅ **Source Citations**: Direct links to reference documents and images
 
 **🤖 Multi-Agent Architecture**
