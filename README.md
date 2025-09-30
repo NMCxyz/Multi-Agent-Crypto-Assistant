@@ -117,7 +117,7 @@ The **Multi-Agent Crypto/Financial Assistant** is an **AI-powered system** desig
 ### **✅ Implemented Features**
 
 **🔥 Core LLM/RAG Pipeline**
-- ✅ **Document Processing**: PDF parsing với Docling, text extraction, image summarization
+- ✅ **Document Processing**: PDF parsing with Docling, text extraction, image summarization
 - ✅ **Semantic Chunking**: GPT-4o-mini powered intelligent segmentation (256-512 tokens)
 - ✅ **Hybrid Vector Search**: BM25 sparse + Dense embeddings in Qdrant Cloud
 - ✅ **Intelligent Retrieval**: Query expansion, cross-encoder reranking with confidence scoring
@@ -126,7 +126,7 @@ The **Multi-Agent Crypto/Financial Assistant** is an **AI-powered system** desig
 **🤖 Multi-Agent Architecture**
 - ✅ **Specialized Agents**: RAG, Web Search, Crypto Sentiment Analysis, Forward-Looking Statement Detection
 - ✅ **LangGraph Orchestration**: State management, conditional routing, agent handoffs
-- ✅ **Conversation Management**: Memory persistence với MongoDB + Redis caching
+- ✅ **Conversation Management**: Memory persistence with MongoDB + Redis caching
 - ✅ **Guardrails System**: Input/output validation, safety filters, bias detection
 
 **📊 Analytics & Monitoring**
@@ -136,8 +136,8 @@ The **Multi-Agent Crypto/Financial Assistant** is an **AI-powered system** desig
 - ✅ **Conversation Management**: Chat history storage, context awareness
 
 **🛡️ Production-Ready Infrastructure**
-- ✅ **Docker Deployment**: Complete containerization với health checks và auto-restart
-- ✅ **Structured Logging**: Comprehensive logging với Loguru, error tracking
+- ✅ **Docker Deployment**: Complete containerization with health checks and auto-restart
+- ✅ **Structured Logging**: Comprehensive logging with Loguru, error tracking
 - ✅ **Security Features**: API key management, rate limiting, input sanitization
 - ✅ **Data Persistence**: Redis caching, MongoDB sessions for conversation memory
 
