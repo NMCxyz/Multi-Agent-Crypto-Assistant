@@ -1,0 +1,77 @@
+version: '3.8'
+
+services:
+  crypto-assistant:
+    build: .
+    image: crypto-assistant:latest
+    container_name: crypto-assistant
+    ports:
+      - "8000:8000"
+    volumes:
+      # Mount toàn bộ project để dev mode (code thay đổi tự động reload)
+      - .:/app
+      # Mount data directories để persist data
+      - ./data:/app/data
+      - ./uploads:/app/uploads
+    environment:
+      # OpenAI API
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - model_name=${model_name:-gpt-4o}
+      - embedding_openai_api_key=${embedding_openai_api_key:-${OPENAI_API_KEY}}
+
+      # MongoDB
+      - MONGODB_URI=${MONGODB_URI}
+      - MONGODB_DATABASE=${MONGODB_DATABASE:-crypto_financial_memory}
+
+      # Redis
+      - REDIS_HOST=crypto-redis
+      - REDIS_PORT=6379
+      - REDIS_PASSWORD=your_secure_redis_password
+      - REDIS_DB=0
+
+      # Qdrant
+      - QDRANT_URL=${QDRANT_URL}
+      - QDRANT_API_KEY=${QDRANT_API_KEY}
+
+      # External APIs
+      - ELEVEN_LABS_API_KEY=${ELEVEN_LABS_API_KEY}
+      - TAVILY_API_KEY=${TAVILY_API_KEY}
+      - HUGGINGFACE_TOKEN=${HUGGINGFACE_TOKEN}
+
+      # Azure ML APIs
+      - CRYPTO_BERT_API_KEY=${CRYPTO_BERT_API_KEY}
+      - AZURE_ML_API_KEY=${AZURE_ML_API_KEY}
+
+      # Caching
+      - ENABLE_CACHING=${ENABLE_CACHING:-true}
+      - CACHE_TTL_HOURS=${CACHE_TTL_HOURS:-24}
+      - SESSION_MEMORY_TTL_HOURS=${SESSION_MEMORY_TTL_HOURS:-2}
+
+    working_dir: /app
+    command: uvicorn app:app --host 0.0.0.0 --port 8000 --reload
+    restart: unless-stopped
+
+    # Health check
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  redis:
+    image: redis:7-alpine
+    container_name: crypto-redis
+    ports:
+      - "6379:6379"
+    command: redis-server --requirepass your_secure_redis_password
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "--raw", "incr", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
+
+volumes:
+  redis_data:
