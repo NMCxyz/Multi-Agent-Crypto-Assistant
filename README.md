@@ -65,13 +65,11 @@ The **Multi-Agent Crypto/Financial Assistant** is an **AI-powered system** desig
 ## 💫 Demo <a name="demo"></a>
 
 <div align="center">
-  <video width="800" controls>
-    <source src="assets/demo.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-  <p><em>🎬 Multi-Agent Crypto Assistant in Action - Real-time Analysis & Intelligence</em></p>
-</div>
 
+[🎬 Watch Demo (MP4)](assets/demo.mp4)
+
+<p><em>Multi-Agent Crypto Assistant in Action - Real-time Analysis & Intelligence</em></p>
+</div>
 ---
 
 
