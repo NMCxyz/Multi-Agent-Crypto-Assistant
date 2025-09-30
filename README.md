@@ -115,7 +115,7 @@ The **Multi-Agent Crypto/Financial Assistant** is an **AI-powered system** desig
 
 ### ⚡ **Advanced AI Features (Extended)**
 - **🔮 Confidence Scoring**: Response reliability assessment with confidence scores
-- **🎯 Agent Routing**: Intelligent query classification and agent selection
+- **🎯 Agent Routing**: Intelligent query classification and agent selection, combination usage of agents 
 - **💾 Memory Management**: Long-term conversation storage, context retention
 - **🌐 Real-time Integration**: Live market data integration through web search
 
@@ -341,46 +341,7 @@ python app.py
    python ingest_rag_data.py --reset --dir ./data/raw/
    ```
 
-3. **📊 Monitor Analytics**
-   - View usage statistics in the web interface
-   - Check system performance and agent utilization
 
-### **💬 Interaction Examples**
-
-#### **🔍 Knowledge Queries (RAG Agent)**
-```
-User: "What are the key financial metrics discussed in the Coinbase report?"
-Assistant: *Provides detailed analysis with source citations and confidence scores*
-```
-
-#### **📈 Sentiment Analysis (Sentiment Agent)**
-```
-User: "Analyze the sentiment of this crypto market report"
-Assistant: *Classifies as Positive/Neutral/Negative with detailed reasoning*
-```
-
-#### **🔮 Forward-Looking Detection (FLS Agent)**
-```
-User: "What predictions are made about Bitcoin in this financial report?"
-Assistant: *Identifies and explains forward-looking statements*
-```
-
-#### **🌐 Current Market Data (Web Search Agent)**
-```
-User: "What's the latest Bitcoin price and market trends?"
-Assistant: *Fetches real-time data and provides analysis*
-```
-
-### **📊 Analytics Dashboard**
-
-The system provides analytics and monitoring:
-
-- **📈 Usage Statistics**: Query logging, response time monitoring, error tracking
-- **🤖 Agent Performance**: Success rate monitoring, utilization statistics
-- **💬 Conversation Analytics**: Chat history storage, context awareness
-- **🔍 System Health**: Memory usage monitoring, API call tracking
-
----
 
 
 <p align="center">
