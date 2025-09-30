@@ -2,7 +2,7 @@
 
 # 🔗 Multi-Agent Crypto/Financial Assistant
 
-**AI-powered multi-agent system for cryptocurrency and financial analysis with RAG capabilities**
+**An 2 days project, AI-powered multi-agent system for cryptocurrency and financial analysis with RAG capabilities**
 
 [![Python](https://img.shields.io/badge/Python-3.11+-blue?style=for-the-badge&logo=python)](https://python.org)
 [![LangGraph](https://img.shields.io/badge/LangGraph-0.3+-teal?style=for-the-badge)](https://langchain-ai.github.io/langgraph/)
