@@ -53,13 +53,6 @@ The **Multi-Agent Crypto/Financial Assistant** is an **AI-powered system** desig
 - **🔍 Evidence-Based Responses**: RAG-powered answers with source citations and confidence scoring
 - **📈 Real-time Intelligence**: Live market data integration through web search
 
-### 🚀 **What Makes This System Special**
-🔹 **🧠 Advanced RAG Pipeline** – Semantic chunking, hybrid search, and intelligent retrieval (10/10)
-🔹 **🤖 Multi-Agent Architecture** – Specialized agents with LangGraph orchestration (20/20)
-🔹 **📊 Analytics & Monitoring** – Usage tracking, conversation analytics, system health monitoring (Extended)
-🔹 **🛡️ Production Ready** – Docker deployment, monitoring, error handling (15/15)
-🔹 **⚡ Advanced Features** – Memory management, guardrails, confidence scoring (Extended)
-
 ---
 
 ## 💫 Demo Usage <a name="demo"></a>
